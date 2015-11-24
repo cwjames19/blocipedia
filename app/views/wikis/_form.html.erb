@@ -1,0 +1,17 @@
+<div class='form'>
+	<%= form_for wiki do |f| %>
+		<div class='form-group'>
+			<%= f.label :title %>
+			<%= f.text_field :title, class: 'form-control', placeholder: "Enter wiki title here" %>
+		</div>
+		<div class='form-group'>
+			<%= f.label :body %>
+			<%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter body here" %>
+		</div>
+		<div class='form-group'>
+			<%= check_box_tag :private %>
+			<%= label_tag :private, "Private" %>
+		</div>
+			<%= f.submit "Create Wiki", class:'btn btn-success' %>
+		<% end %>
+</div>

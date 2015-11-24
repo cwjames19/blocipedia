@@ -1,0 +1,7 @@
+<h1>Index</h1>
+<p>Find information about whatever you seek... as long as we have it on file.</p>
+<div class='wiki-index'>
+	<% Wiki.all.each do |wiki| %>
+		<%= render partial: 'wikis/wiki', locals: { wiki: wiki } %><br />
+	<% end %>
+</div>
