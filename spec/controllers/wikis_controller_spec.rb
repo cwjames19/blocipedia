@@ -12,7 +12,7 @@ RSpec.describe WikisController, type: :controller do
       end
     end
     
-    describe "GET #create" do
+    describe "POST #create" do
       it "redirects the user to the sign-in page" do
         post :create, user: my_user
         expect(response).to redirect_to(new_user_session_path)
@@ -25,8 +25,15 @@ RSpec.describe WikisController, type: :controller do
         expect(response).to have_http_status(:success)
       end
     end
+    
+    describe "GET #index" do
+      it "returns http success" do
+        get :index
+        expect(response).to have_http_status(:success)
+      end
+    end
   
-    describe "GET #destroy" do
+    describe "DELETE #destroy" do
       it "redirects the user to the sign-in page" do
         delete :destroy, id: my_wiki
         expect(response).to redirect_to(new_user_session_path)
@@ -90,6 +97,91 @@ RSpec.describe WikisController, type: :controller do
         expect(this_wiki.private).to eq my_boolean
       end
     end
+    
+    describe "GET #show" do
+      it "returns http status, success" do
+        get :show, id: my_wiki
+        expect(response).to have_http_status :success
+      end
+      
+      it "renders the show view" do
+        get :show, id: my_wiki
+        expect(response).to render_template :show
+      end
+      
+      it "assigns my_wiki to @wiki" do
+        get :show, id: my_wiki
+        expect(assigns(:wiki)).to eq my_wiki
+      end
+    end
+    
+    describe "GET #index" do
+      it "returns http success" do
+        get :index
+        expect(response).to have_http_status(:success)
+      end
+    end
+    
+    describe "DELETE destroy" do
+      it "redirects to the wiki index page" do
+        delete :destroy, id: my_wiki
+        expect(response).to redirect_to wikis_path
+      end
+      
+      it "decreases the number of wiki by one" do
+        this_wiki = create(:wiki, user: my_user)
+        pre_count = Wiki.all.count
+        delete :destroy, id: this_wiki
+        expect(Wiki.all.count).to eq(pre_count - 1)
+      end
+      
+      it "deletes my_wiki" do
+        this_wiki = create(:wiki, user: my_user)
+        delete :destroy, id: this_wiki
+        count = Wiki.where(id: this_wiki).size
+        expect(count).to eq 0
+      end
+    end
+    
+    describe "GET #EDIT" do
+      it "returns http success" do
+        get :edit, id: my_wiki
+        expect(response).to have_http_status :success
+      end
+      
+      it "renders the edit view" do
+        get :edit, id: my_wiki
+        expect(response).to render_template :edit
+      end
+      
+      it "assigns my_wiki to @wiki" do
+        get :edit, id: my_wiki
+        expect(assigns(:wiki)).to eq my_wiki
+      end
+    end
+    
+    describe "PUT #update" do
+      it "updates wiki with expected attributes" do
+        new_title = "Zebras..."
+        new_body = "... are what happen when you try to fill in a drawing of a horse with an Etch-A-Sketch"
+        new_boolean = false
+        
+        put :update, id: my_wiki, wiki: {title: new_title, body: new_body, private: new_boolean }
+        
+        updated_wiki = assigns(:wiki)
+        expect(updated_wiki.title).to eq new_title
+        expect(updated_wiki.body).to eq new_body
+        expect(updated_wiki.private).to eq new_boolean
+      end
+      
+      it "redirects to the updated wiki's page" do
+        new_title = "Zebras..."
+        new_body = "... are what happen when you try to fill in a drawing of a horse with an Etch-A-Sketch"
+        new_boolean = "false"
+        
+        put :update, id: my_wiki, wiki: {title: new_title, body: new_boolean, private: new_boolean }
+        expect(response).to redirect_to [:wiki]
+      end
+    end
   end
-
 end

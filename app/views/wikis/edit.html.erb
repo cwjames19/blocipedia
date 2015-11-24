@@ -1,2 +1,10 @@
-<h1>Wikis#edit</h1>
-<p>Find me in app/views/wikis/edit.html.erb</p>
+<h2><%= @wiki.title %></h2>
+<p>Reminder of guidelines</p>
+<ul>
+	<li>Keep it simple, stupid.</li>
+	<li>Cite as much as possible.</li>
+	<li>Don't forget to add links to other pages.</li>
+</ul>
+<div class='col-md-8'>
+	<%= render partial: "edit_form", locals: { wiki: @wiki } %>
+</div>

@@ -3113,3 +3113,1419 @@ Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde45
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 07:47:27 +0000
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (3.6ms)
+  Rendered wikis/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 135ms (Views: 105.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 07:47:28 +0000
+
+
+Started POST "/wikis" for 100.9.156.121 at 2015-11-24 07:47:55 +0000
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GclW5/8CM+d2ivsEiFEZMb9Y1yU/XxQRawOjlT1YnEbH0O2I25a3+VBLmK+14oOY+o2uOmxrhJ/gyZmmNh/NjA==", "wiki"=>{"title"=>"Cheetah", "body"=>"They're fast."}, "commit"=>"Create Wiki"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 9ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  app/controllers/wikis_controller.rb:10:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.0ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 07:48:23 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (3.6ms)
+  Rendered wikis/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 205ms (Views: 170.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 07:48:24 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 07:48:25 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 07:48:25 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 07:48:25 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 07:48:25 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 07:48:26 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 07:48:26 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 07:48:26 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 07:48:26 +0000
+
+
+Started POST "/wikis" for 100.9.156.121 at 2015-11-24 07:48:34 +0000
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cPfeQsAdNvTTG95q3Bl/puDYSatw9DLbP8M7IJYQ58au7mUt5Imy6vXavcHhquUPpQ0wtCPAolW0CQETnVe2DA==", "wiki"=>{"title"=>"Giraffe", "body"=>"They're tall."}, "commit"=>"Create Wiki"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mWiki Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "wikis" WHERE "wikis"."title" = 'Giraffe' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", "Giraffe"], ["body", "They're tall."], ["user_id", 1], ["created_at", "2015-11-24 07:48:34.982642"], ["updated_at", "2015-11-24 07:48:34.982642"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://blocipedia-cwjames19.c9users.io/
+Completed 302 Found in 141ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 07:48:35 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 121ms (Views: 119.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 07:48:46 +0000
+Processing by WikisController#new as HTML
+  Parameters: {"authenticity_token"=>"KGA7bI5z+wEMDKLkpNwXQ4SrN+DZd/pRwbRYhHL/ET/2eYADqud/HyrNwU+Zb43qwX5O/4pDat9KfmK3ebhA9Q=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (2.7ms)
+  Rendered wikis/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 117ms (Views: 114.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 100.9.156.121 at 2015-11-24 10:30:25 +0000
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LMzGv8OclGzsHdUlqgrzCA3OPdRK0mJfXh6PbItvMODy1X3Q5wgQcsrcto6XuWmhSBtEyxnm8tHV1LVfgChhKg==", "wiki"=>{"title"=>"Duck", "body"=>"Goose"}, "commit"=>"Create Wiki"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mWiki Exists (0.3ms)[0m  SELECT  1 AS one FROM "wikis" WHERE "wikis"."title" = 'Duck' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Duck"], ["body", "Goose"], ["user_id", 1], ["created_at", "2015-11-24 10:30:25.975765"], ["updated_at", "2015-11-24 10:30:25.975765"]]
+  [1m[35m (16.7ms)[0m  commit transaction
+Redirected to http://blocipedia-cwjames19.c9users.io/
+Completed 302 Found in 180ms (ActiveRecord: 17.9ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 10:30:26 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 197ms (Views: 195.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 10:46:56 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 277ms (Views: 262.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:46:56 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:46:57 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:47:01 +0000
+Processing by WikisController#index as HTML
+  Parameters: {"authenticity_token"=>"tSDp8auo1xEsbGCOT+O+Lgw5ssIp7rbRtvoVX0B80FprOVKejzxTDwqtAyVyUCSHSezL3XraJl89MC9sSzuBkA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/index.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `show_wiki_path' for #<#<Class:0x007fe9f2d90a38>:0x007fe9f2d7ff30>):
+    2: <p>Find information about whatever you seek... as long as we have it on file.</p>
+    3: <div class='wiki-index'>
+    4: 	<% Wiki.all.each do |wiki| %>
+    5: 		<%= link_to "#{wiki.title}", show_wiki_path(wiki), method: :get %>
+    6: 	<% end %>
+    7: </div>
+  app/views/wikis/index.html.erb:5:in `block in _app_views_wikis_index_html_erb___1697263564057746985_70321389172400'
+  app/views/wikis/index.html.erb:4:in `_app_views_wikis_index_html_erb___1697263564057746985_70321389172400'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.0ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:47:38 +0000
+Processing by WikisController#index as HTML
+  Parameters: {"authenticity_token"=>"tSDp8auo1xEsbGCOT+O+Lgw5ssIp7rbRtvoVX0B80FprOVKejzxTDwqtAyVyUCSHSezL3XraJl89MC9sSzuBkA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 273ms (Views: 270.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:47:39 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:47:39 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:47:39 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:47:39 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:47:40 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:47:40 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:47:40 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:47:40 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:47:40 +0000
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 10:53:52 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 235ms (Views: 231.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:53:55 +0000
+Processing by WikisController#index as HTML
+  Parameters: {"authenticity_token"=>"JIaRmwzGU9mMyQemc436Q6lVwU2AZHRYg8Z+MuXn7VH6nyr0KFLXx6oIZA1OPmDq7IC4UtNQ5NYIDEQB7qC8mw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 132ms (Views: 129.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:54:42 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 197ms (Views: 193.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:54:43 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:54:59 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.2ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 171ms (Views: 168.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:00 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:55:17 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.5ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 259ms (Views: 255.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:18 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:55:27 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 187ms (Views: 184.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:55:28 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:56:41 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.2ms)
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 340ms (Views: 336.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:56:42 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:56:42 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:56:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:56:42 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:56:42 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:56:43 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:56:43 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:56:43 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:56:43 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:57:13 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 187ms (Views: 184.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:14 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:57:34 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 269ms (Views: 266.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:57:35 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 10:59:14 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 197ms (Views: 194.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 10:59:15 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:00:08 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 181ms (Views: 178.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:00:08 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:00:08 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:00:09 +0000
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 11:00:14 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"DHjUvQprNf9h2ByyuLXK9MHTV4ylY8Fq/bHhQ7Wwg0fSYW/SLv+x4UcZfxmFBlBdhAYuk/ZXUeR2e9twvvfSjQ=="}
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 251ms (Views: 249.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 11:00:16 +0000
+Processing by WikisController#new as HTML
+  Parameters: {"authenticity_token"=>"sIV22Bhz7TXQjGAowIHSIk0r8HjxzakuRKT9pRJH36lunM23POdpK/ZNA4P9MkiLCP6JZ6L5OaDPbseWGQCOYw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (5.3ms)
+  Rendered wikis/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 179ms (Views: 176.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 100.9.156.121 at 2015-11-24 11:00:33 +0000
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"L8jLf7NonBx0HE4LFd28lWSfnSjR7TBnllqG3kyrTsXx0XAQl/wYAlLdLaAobiY8IUrkN4LZoOkdkLztR+wfDw==", "wiki"=>{"title"=>"Tigers", "body"=>"They hate cinnamon."}, "commit"=>"Create Wiki"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mWiki Exists (0.3ms)[0m  SELECT  1 AS one FROM "wikis" WHERE "wikis"."title" = 'Tigers' LIMIT 1
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Tigers"], ["body", "They hate cinnamon."], ["user_id", 1], ["created_at", "2015-11-24 11:00:33.550796"], ["updated_at", "2015-11-24 11:00:33.550796"]]
+  [1m[35m (10.9ms)[0m  commit transaction
+Redirected to http://blocipedia-cwjames19.c9users.io/
+Completed 302 Found in 109ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 11:00:33 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 134ms (Views: 132.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:00:39 +0000
+Processing by WikisController#index as HTML
+  Parameters: {"authenticity_token"=>"wOnYA2Uue0wztfbhnNmLFE6wFX5d+dL+UI1JMXMTodEe8GNsQbr/UhV0lUqhahG9C2VsYQ7NQnDbR3MCeFTwGw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.5ms)
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 157ms (Views: 153.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis/2" for 100.9.156.121 at 2015-11-24 11:00:45 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"authenticity_token"=>"GC/meXSskKsKg/GfZBJN6BkgLeYs9QCT/RpJtGQwnfTGNl0WUDgUtSxCkjRZoddBXPVU+X/BkB120HOHb3fMPg==", "id"=>"2"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered wikis/show.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 291ms (Views: 288.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:00:48 +0000
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (162.7ms)
+Completed 200 OK in 320ms (Views: 317.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:00:50 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"authenticity_token"=>"eVoIArsJNnG6wgtSLvtdmGV6+hIHSz0KNruU1pNNPwGnQ7Ntn52yb5wDaPkTSMcxIK+DDVR/rYS9ca7lmApuyw==", "id"=>"1"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 200ms (Views: 197.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:01:07 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"authenticity_token"=>"eVoIArsJNnG6wgtSLvtdmGV6+hIHSz0KNruU1pNNPwGnQ7Ntn52yb5wDaPkTSMcxIK+DDVR/rYS9ca7lmApuyw==", "id"=>"1"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 191ms (Views: 188.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:03:06 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 263ms (Views: 260.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:03:07 +0000
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:04:01 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 220ms (Views: 217.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:02 +0000
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:04:36 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 184ms (Views: 182.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:04:37 +0000
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 11:22:13 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"7HgGse2TOpkm3p7qWMBw1hd8efEDjB2r1AD4OBRI8BMyYb3eyQe+hwAf/UFlc+p/UqkA7lC4jSVfysILHw+h2Q=="}
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 272ms (Views: 263.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:22:18 +0000
+Processing by WikisController#index as HTML
+  Parameters: {"authenticity_token"=>"ucqn06apG4SEL3Jr9HOQv1A+HzCkI0DTxOICS2H+5pZn0xy8gj2fmqLuEcDJwAoWFetmL/cX0F1PKDh4arm3XA=="}
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.7ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (27.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 219ms (Views: 216.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:22:21 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"authenticity_token"=>"+/IEffWCFFTGEB6/LAtx+fU8EiC+nSlKXDkg86GnLRwl678S0RaQSuDRfRQRuOtQsOlrP+2pucTX8xrAquB81g==", "id"=>"1"}
+  [1m[36mWiki Load (0.7ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 227ms (Views: 223.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:23:32 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined local variable or method `wiki' for #<#<Class:0x000000025d7aa8>:0x007fe9f2512230>):
+    2: <h1><%= @wiki.title %></h1>
+    3: 	<div class='pull-right'>
+    4: 		Edit Wiki Link<br />
+    5: 		<%= link_to "Delete Wiki", [wiki], method: :delete %>
+    6: 	</div>
+    7: </div>
+    8: <br />
+  app/views/wikis/show.html.erb:5:in `_app_views_wikis_show_html_erb__3510505055179240098_70321384753160'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.1ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:23:47 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 159ms (Views: 157.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:23:48 +0000
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:40:40 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 221ms (Views: 197.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:40:41 +0000
+
+
+Started GET "/wikis/1/edit" for 100.9.156.121 at 2015-11-24 11:40:44 +0000
+Processing by WikisController#edit as HTML
+  Parameters: {"authenticity_token"=>"yzu7Vm2HsOziPdMUMFjXXcxQ0NXleT6YOKeXqGDTplcVIgA5SRM08sT8sL8N6030iYWpyrZNrhazba2ba5T3nQ==", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 180ms (Views: 177.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 11:43:26 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"BocHMy0x5tOG6TAwGSV2RBm6iy1RTMI7aGaDDzCr1LnYnrxcCaVizaAoU5skluztXG/yMgJ4UrXjrLk8O+yFcw=="}
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 180ms (Views: 178.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 11:43:29 +0000
+Processing by WikisController#new as HTML
+  Parameters: {"authenticity_token"=>"hgofbCAHadZuvVAF2tNBWgR8q1cTxFpUQLj9Gpy0GhNYE6QDBJPtyEh8M67nYNvzQanSSEDwytrLcscpl/NL2Q=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (2.1ms)
+  Rendered wikis/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 199ms (Views: 196.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 11:52:09 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (2.0ms)
+  Rendered wikis/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 148ms (Views: 145.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:10 +0000
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 11:52:12 +0000
+Processing by WelcomeController#index as HTML
+  Parameters: {"authenticity_token"=>"gN9XKstWLi4OY2FOgb5Tdh7VMe3y9vqAVjd2jjAiZKdexuxF78KqMCiiAuW8DcnfWwBI8qHCag7d/Uy9O2U1bQ=="}
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 190ms (Views: 188.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:52:14 +0000
+Processing by WikisController#index as HTML
+  Parameters: {"authenticity_token"=>"AGY5K8lUceJCtbKQ9Q0tgPf+u56ZNN+2UbEVtfnGiXPef4JE7cD1/GR00TvIvrcpsivCgcoATzjaey+G8oHYuQ=="}
+  [1m[35mWiki Load (1.0ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/_wiki.html.erb (0.2ms)
+  Rendered wikis/index.html.erb within layouts/application (180.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 367ms (Views: 365.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:52:16 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"authenticity_token"=>"+EGiKkezt91rRAuXPwOkrdkno/Mm6EExHsI/dv7fe8smWBlFYyczw02FaDwCsD4EnPLa7HXc0b+VCAVF9ZgqAQ==", "id"=>"1"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 183ms (Views: 180.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/wikis/1/edit" for 100.9.156.121 at 2015-11-24 11:52:20 +0000
+Processing by WikisController#edit as HTML
+  Parameters: {"authenticity_token"=>"PJqwajZvHyZ9mamLif7F8uAXJwuIppt6040c7Ku736LigwsFEvubOFtYyiC0TV9bpcJeFNuSC/RYRybfoPyOaA==", "id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_edit_form.html.erb (5.4ms)
+  Rendered wikis/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 218ms (Views: 215.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis/1/edit" for 100.9.156.121 at 2015-11-24 11:52:47 +0000
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_edit_form.html.erb (2.6ms)
+  Rendered wikis/edit.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 181ms (Views: 179.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:52:48 +0000
+
+
+Started GET "/wikis/1/edit" for 100.9.156.121 at 2015-11-24 11:53:21 +0000
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_edit_form.html.erb (4.3ms)
+  Rendered wikis/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 213ms (Views: 207.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:53:22 +0000
+
+
+Started GET "/wikis/1/edit" for 100.9.156.121 at 2015-11-24 11:54:34 +0000
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_edit_form.html.erb (2.8ms)
+  Rendered wikis/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 161ms (Views: 158.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:35 +0000
+
+
+Started GET "/wikis/1/edit" for 100.9.156.121 at 2015-11-24 11:54:50 +0000
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_edit_form.html.erb (2.4ms)
+  Rendered wikis/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 152ms (Views: 149.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:54:51 +0000
+
+
+Started PATCH "/wikis/1" for 100.9.156.121 at 2015-11-24 11:55:13 +0000
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XiusSZonCqlvCa05IhmE37Y4wP98g814MGXvWrw3/kqAMhcmvrOOt0nIzpIfqh528+254C+3Xfa7r9Vpt3CvgA==", "wiki"=>{"body"=>"They're tall and eat trees."}, "commit"=>"Create Wiki", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mWiki Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "wikis" WHERE ("wikis"."title" = 'Giraffe' AND "wikis"."id" != 1) LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wikis" SET "body" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["body", "They're tall and eat trees."], ["updated_at", "2015-11-24 11:55:13.956486"], ["id", 1]]
+  [1m[35m (10.1ms)[0m  commit transaction
+Redirected to http://blocipedia-cwjames19.c9users.io/wikis/1
+Completed 302 Found in 126ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/wikis/1" for 100.9.156.121 at 2015-11-24 11:55:14 +0000
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/show.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 209ms (Views: 206.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/wikis/1" for 100.9.156.121 at 2015-11-24 11:55:21 +0000
+Processing by WikisController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZOSqHFPShuyJupkWCsG6+06boFAcq4AiEZv0ENTU9pe6/RFzd0YC8q97+r03ciBSC07ZT0+fEKyaUc4j35OnXQ==", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (172.7ms)[0m  DELETE FROM "wikis" WHERE "wikis"."id" = ?  [["id", 1]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://blocipedia-cwjames19.c9users.io/wikis
+Completed 302 Found in 186ms (ActiveRecord: 182.5ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:55:21 +0000
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/_wiki.html.erb (0.1ms)
+  Rendered wikis/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 206ms (Views: 204.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:56:17 +0000
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.8ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (3.9ms)
+  Rendered wikis/index.html.erb within layouts/application (23.9ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"wikis"} missing required keys: [:id]):
+    1: <div>
+    2: 	<%= link_to "#{wiki.title}", wiki_path(wiki), method: :get %>
+    3: 	<div class='pull-right'>
+    4: 		<%= link_to "Edit Wiki", edit_wiki_path, method: :get %><br />
+    5: 		<%= link_to "Delete Wiki", [@wiki], method: :delete %>
+    6: 	</div>
+    7: </div>
+  app/views/wikis/_wiki.html.erb:4:in `_app_views_wikis__wiki_html_erb___3344042064897962039_70321389963720'
+  app/views/wikis/index.html.erb:5:in `block in _app_views_wikis_index_html_erb___1697263564057746985_70321395475600'
+  app/views/wikis/index.html.erb:4:in `_app_views_wikis_index_html_erb___1697263564057746985_70321395475600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (26.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (139.4ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:56:50 +0000
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (3.7ms)
+  Rendered wikis/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Nil location provided. Can't build URI.):
+    2: 	<%= link_to "#{wiki.title}", wiki_path(wiki), method: :get %>
+    3: 	<div class='pull-right'>
+    4: 		<%= link_to "Edit Wiki", edit_wiki_path(wiki), method: :get %><br />
+    5: 		<%= link_to "Delete Wiki", [@wiki], method: :delete %>
+    6: 	</div>
+    7: </div>
+  app/views/wikis/_wiki.html.erb:5:in `_app_views_wikis__wiki_html_erb___3344042064897962039_70321379857880'
+  app/views/wikis/index.html.erb:5:in `block in _app_views_wikis_index_html_erb___1697263564057746985_70321395475600'
+  app/views/wikis/index.html.erb:4:in `_app_views_wikis_index_html_erb___1697263564057746985_70321395475600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (30.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (119.7ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:57:05 +0000
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.5ms)
+  Rendered wikis/_wiki.html.erb (0.5ms)
+  Rendered wikis/index.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 291ms (Views: 288.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:06 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:57:20 +0000
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.3ms)
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/index.html.erb within layouts/application (5.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 204ms (Views: 202.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 11:57:21 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 11:59:29 +0000
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.4ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_wiki.html.erb:4: syntax error, unexpected ',', expecting =>
+...success', edit_wiki_path(wiki), method: :get );@output_buffe...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_wiki.html.erb:5: syntax error, unexpected ',', expecting =>
+...lass: 'btn btn-danger', [wiki], method: :delete );@output_bu...
+...                               ^):
+  app/views/wikis/_wiki.html.erb:4: syntax error, unexpected ',', expecting =>
+  app/views/wikis/_wiki.html.erb:5: syntax error, unexpected ',', expecting =>
+  app/views/wikis/index.html.erb:5:in `block in _app_views_wikis_index_html_erb___1697263564057746985_70321395475600'
+  app/views/wikis/index.html.erb:4:in `_app_views_wikis_index_html_erb___1697263564057746985_70321395475600'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (25.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.0ms)
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 12:02:07 +0000
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/_wiki.html.erb (2.1ms)
+  Rendered wikis/index.html.erb within layouts/application (9.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 338ms (Views: 335.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:08 +0000
+
+
+Started GET "/wikis" for 100.9.156.121 at 2015-11-24 12:02:44 +0000
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.8ms)
+  Rendered wikis/_wiki.html.erb (0.6ms)
+  Rendered wikis/index.html.erb within layouts/application (7.4ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 244ms (Views: 242.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 12:02:44 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 12:02:44 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:44 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:44 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:45 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 12:02:45 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:45 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:45 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 12:02:45 +0000
