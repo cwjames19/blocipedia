@@ -2642,3 +2642,474 @@ Started GET "/" for 100.9.156.121 at 2015-11-24 03:03:58 +0000
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 78ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateWikis (20151124051332)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "wikis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "private" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_wikis_on_user_id" ON "wikis" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151124051332"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_confirmation_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 06:33:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/welcome/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+...put_buffer.append=( 'new wiki', new_wiki_path, method: :get ...
+...                               ^):
+  app/views/welcome/index.html.erb:4: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 06:34:08 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2789ms (Views: 2787.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:12 +0000
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 06:34:22 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 153ms (Views: 152.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:34:22 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 06:34:22 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:34:23 +0000
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:34:26 +0000
+Processing by WikisController#new as HTML
+  Parameters: {"authenticity_token"=>"t+Mlom2oEQZuZ2VhQHVFR+/94Fg23fwhzDMCis+15UKsUvjYXt/wWqSx8XNVsc6wmp8maogiRHqOuPIZv9zv0w=="}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 100.9.156.121 at 2015-11-24 06:34:27 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 220ms (Views: 187.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for 100.9.156.121 at 2015-11-24 06:35:43 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i7MnLZuP82Dwjza4u+T+kKzZx6JWmoWxxhG6ZbeUuniQAvpXqPgSPDpZoqquIHVn2bsBkOhlPeqEmkr2x/2w6Q==", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "user@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2015-11-24 06:35:43.809517"], ["sign_in_count", 2], ["updated_at", "2015-11-24 06:35:43.811177"], ["id", 1]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://blocipedia-cwjames19.c9users.io/wikis/new
+Completed 302 Found in 169ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:35:43 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (0.3ms)
+  Rendered wikis/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 105ms (Views: 89.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 06:39:29 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:39:40 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:39:41 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:39:41 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:39:41 +0000
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:39:42 +0000
+Processing by WikisController#new as HTML
+  Parameters: {"authenticity_token"=>"GeLNmH6AyAsE+chC44Y1doQ5Ub+JQk4BNyD7bEcRe3bH+3b3WhRMFSI4q+neNa/fwewooNp23o+86sFfTFYqvA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (0.1ms)
+  Rendered wikis/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 114ms (Views: 112.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:49:33 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (0.9ms)
+  Rendered wikis/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...nd=( f.text_field, placeholder: "Enter title here" );@output...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:9: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.area, columns: 8, rows: 12, placeholder: "E...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/_form.html.erb:9: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/_form.html.erb:18: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/wikis/_form.html.erb:20: syntax error, unexpected end-of-input, expecting keyword_end
+  app/views/wikis/new.html.erb:9:in `_app_views_wikis_new_html_erb___4210478757115413341_70321391865820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:54:14 +0000
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (1.3ms)
+  Rendered wikis/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...r.append=( f.text_field, class: 'form-control', placeholder:...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+...t_field, class: 'form-control', placeholder: "Enter wiki tit...
+...                               ^):
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+  app/views/wikis/new.html.erb:9:in `_app_views_wikis_new_html_erb___4210478757115413341_70321391865820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.8ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:55:08 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (1.3ms)
+  Rendered wikis/new.html.erb within layouts/application (134.2ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...r.append=( f.text_field, class: 'form-control', placeholder:...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+...t_field, class: 'form-control', placeholder: "Enter wiki tit...
+...                               ^):
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+  app/views/wikis/new.html.erb:9:in `_app_views_wikis_new_html_erb___4210478757115413341_70321391865820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.3ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:55:38 +0000
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (1.2ms)
+  Rendered wikis/new.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...r.append=( f.text_field, class: 'form-control', placeholder:...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+...t_field, class: 'form-control', placeholder: "Enter wiki tit...
+...                               ^):
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+  app/views/wikis/new.html.erb:9:in `_app_views_wikis_new_html_erb___4210478757115413341_70321391865820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.0ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:56:03 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (1.3ms)
+  Rendered wikis/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+...r.append=( f.text_field, class: 'form-control', placeholder:...
+...                               ^
+/home/ubuntu/workspace/app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+...t_field, class: 'form-control', placeholder: "Enter wiki tit...
+...                               ^):
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/_form.html.erb:5: syntax error, unexpected ',', expecting ')'
+  app/views/wikis/new.html.erb:9:in `_app_views_wikis_new_html_erb___4210478757115413341_70321391865820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.3ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:56:26 +0000
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (7.7ms)
+  Rendered wikis/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 153ms (Views: 150.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:27 +0000
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:56:59 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (4.0ms)
+  Rendered wikis/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 151ms (Views: 148.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:56:59 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:56:59 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 06:56:59 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 06:56:59 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:00 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:00 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:00 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:00 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:00 +0000
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:57:09 +0000
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (1.1ms)
+  Rendered wikis/new.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+SyntaxError (/home/ubuntu/workspace/app/views/wikis/_form.html.erb:15: syntax error, unexpected tLABEL, expecting '='
+...uffer.append=( f.submit, class:'btn btn-success' );@output_b...
+...                               ^):
+  app/views/wikis/_form.html.erb:15: syntax error, unexpected tLABEL, expecting '='
+  app/views/wikis/new.html.erb:9:in `_app_views_wikis_new_html_erb___4210478757115413341_70321391865820'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.9ms)
+
+
+Started GET "/wikis/new" for 100.9.156.121 at 2015-11-24 06:57:31 +0000
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered wikis/_form.html.erb (2.7ms)
+  Rendered wikis/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 280ms (Views: 277.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/application.self-821eef8fdabe9372d9c1037583ee21758fe89abe2672908a522659fb38b23236.css?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 100.9.156.121 at 2015-11-24 06:57:32 +0000
