@@ -40,23 +40,27 @@ class WikisController < ApplicationController
 
 	def edit
 		@wiki = Wiki.find(params[:id])
+		authorize @wiki
 	end
 
 	def update
 		@wiki = Wiki.find(params[:id])
+		authorize @wiki
 		
 		if @wiki.update_attributes(wiki_params)
 			flash[:notice] = "Wiki updated"
+			redirect_to [@wiki]
 		else
 			flash[:error] = "Sorry, there was a problem while trying to update the wiki. please try again later."
+			render :edit
 		end
-		redirect_to [@wiki]
 	end
 	
 	private
 	
 	def authenticate_user
 		unless current_user
+			flash[:error] = "You must be logged in to do that!"
 			redirect_to new_user_session_path
 		end
 	end
