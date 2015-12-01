@@ -1,8 +1,19 @@
 Rails.application.routes.draw do
 
-	devise_for :users
+	devise_for :users, controllers: {
+		registrations: 'users/registrations',
+		confirmations: 'users/confirmations',
+		passwords: 'users/passwords',
+		sessions: 'users/sessions',
+		unlocks: 'users/unlocks',
+		omniauth_callbakcs: 'users/omniauth_callbacks'
+		}
 	
+	devise_scope :user do
+		put 'users/downgrade' => 'users/registrations#downgrade', as: 'downgrade_user_registration'
+	end
 	resources :wikis
+	resources :charges, only: [:new, :create]
 	
 	root to: 'welcome#index'
 	# The priority is based upon order of creation: first created -> highest priority.

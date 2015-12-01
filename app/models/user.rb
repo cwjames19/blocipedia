@@ -8,8 +8,15 @@ class User < ActiveRecord::Base
   
   validates :username, presence: true
   
+  attr_accessor :upgraded_at, :downgraded_at
   enum role: [:standard, :premium, :admin]
   after_initialize :set_default_role, :if => :new_record?
+  
+  def update_upgraded_at(timestamp)
+    self.upgraded_at = timestamp
+  end
+  
+  private
   
   def set_default_role
     self.role ||= :standard

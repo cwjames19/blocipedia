@@ -1,0 +1,6 @@
+ stripe_api_key: 
+ stripe_publishable_key: 
+
+ production:
+   stripe_api_key: 
+   stripe_publishable_key:
