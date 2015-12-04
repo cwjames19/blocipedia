@@ -1,7 +1,7 @@
 include FactoryGirl::Syntax::Methods
 require 'faker'
 
-10.times do
+7.times do
 	User.create!(
 		username: Faker::Lorem.word,
 		email: Faker::Internet.email,

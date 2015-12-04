@@ -20,3 +20,5 @@
 !/log/.keep
 !/tmp/.keep
 <% end -%>
+# Ignore application configuration
+/config/application.yml

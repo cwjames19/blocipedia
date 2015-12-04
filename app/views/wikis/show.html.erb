@@ -2,7 +2,7 @@
 <h1><%= @wiki.title %></h1>
 	<div class='pull-right'>
 		<%= link_to "Edit Wiki", edit_wiki_path, method: :get %><br />
-		<%= link_to "Delete Wiki", [@wiki], method: :delete %>
+		<%= link_to "Delete Wiki", [@wiki], method: :delete if policy(@wiki).destroy? %>
 	</div>
 </div>
 <br />

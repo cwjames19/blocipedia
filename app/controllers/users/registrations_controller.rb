@@ -35,6 +35,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def cancel
   #   super
   # end
+  
+  def downgrade
+    current_user.standard!
+    flash[:notice] = "Hate to see you leave but love to watch you go ;)"
+    redirect_to(request.referer || root_path)
+  end
 
   # protected
 

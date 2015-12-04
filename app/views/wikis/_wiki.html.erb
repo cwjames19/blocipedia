@@ -1,7 +1,11 @@
 <div>
 	<%= link_to "#{wiki.title}", wiki_path(wiki), method: :get %>
 	<div class='pull-right'>
-		<%= link_to "Edit Wiki", edit_wiki_path(wiki), method: :get, class: 'btn btn-success' %> | 
-		<%= link_to "Delete Wiki", [wiki], method: :delete, class: 'btn btn-danger' %>
+		<% if policy(wiki).edit? %>
+			<%= link_to "Edit Wiki", edit_wiki_path(wiki), method: :get, class: 'btn btn-success' %>
+		<% end %>
+		<% if policy(wiki).destroy? %>
+			<%= link_to "Delete Wiki", [wiki], method: :delete, class: 'btn btn-danger' %>
+		<% end %>
 	</div>
 </div>
