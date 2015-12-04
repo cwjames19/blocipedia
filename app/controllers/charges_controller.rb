@@ -23,14 +23,15 @@ class ChargesController < ApplicationController
 			currency: 'usd'
 			)
 		
+		current_user.update_column(:upgraded_at, Time.current)
 		current_user.premium!
-		current_user.update_upgraded_at(Time.current)
+		
 		flash[:notice] = "Payment received. Enjoy the site's Premium features!"
 		redirect_to edit_user_registration_path(current_user)
 	
-		rescue Stripe::CardError => e
-			flash[:error] = e.message
-			redirect_to new_charge_path
-		end
+	rescue Stripe::CardError => e
+		flash[:error] = e.message
+		redirect_to new_charge_path
+	end
 
 end

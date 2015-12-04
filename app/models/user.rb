@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
   
   def update_upgraded_at(timestamp)
     self.upgraded_at = timestamp
+    save
   end
   
   private

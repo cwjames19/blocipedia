@@ -1,24 +1,37 @@
 class WikiPolicy < ApplicationPolicy
 	
-	def new
+	class Scope
+		attr_reader :scope, :user
+		
+		def initialize(user, scope)
+			@scope = scope
+			@user = user
+		end
+		
+		def resolve
+			scope.all
+		end
+	end
+	
+	def new?
 		user.present?
 	end
 	
-	def show
+	def show?
 	end
 	
-	def create
+	def create?
 		user.present?
 	end
 	
-	def index
+	def index?
 	end
 	
-	def destroy
-		user.present?
+	def destroy?
+		user.admin?
 	end
 	
-	def edit
+	def edit?
 		user.present?
 	end
 	
