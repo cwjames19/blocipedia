@@ -13,7 +13,7 @@ User.create(username: 'Premium', email: 'premium@example.com', password: 'hellow
 User.create(username: 'Admin', email: 'admin@example.com', password: 'helloworld', role: 'admin')
 users = User.all
 
-40.times do
+25.times do
 	Wiki.create!(
 		title: Faker::Lorem.characters(6),
 		body: Faker::Lorem.paragraph,

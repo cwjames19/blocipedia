@@ -9,9 +9,13 @@
 			<%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter body here" %>
 		</div>
 		<div class='form-group'>
-			<%= check_box_tag :private %>
-			<%= label_tag :private, "Private" %>
+			<% if (wiki.user == current_user && current_user.role == 'premium') || current_user.role== 'admin' %>
+				<%= fields_for wiki do |p| %>
+					<%= p.label :private %>
+					<%= p.check_box :private %>
+				<% end %>
+			<% end %>
 		</div>
-			<%= f.submit "Submit Wiki", class:'btn btn-success' %>
-		<% end %>
+		<%= f.submit "Submit Wiki", class:'btn btn-success' %>
+	<% end %>
 </div>
