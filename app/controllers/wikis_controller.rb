@@ -21,9 +21,11 @@ class WikisController < ApplicationController
 
 	def show
 		@wiki = Wiki.find(params[:id])
+		authorize @wiki
 	end
 	
 	def index
+		@wikis = policy_scope(Wiki)
 	end
 
 	def destroy
@@ -50,7 +52,7 @@ class WikisController < ApplicationController
 		
 		if @wiki.update_attributes(wiki_params)
 			flash[:notice] = "Wiki updated"
-			redirect_to [@wiki]
+			redirect_to @wiki
 		else
 			flash[:error] = "Sorry, there was a problem while trying to update the wiki. please try again later."
 			render :edit

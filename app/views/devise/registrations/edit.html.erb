@@ -37,7 +37,7 @@
   <p>Want more from Blocipedia? <%= button_to "Upgrade", new_charge_path, method: :get %></p>
 <% elsif current_user.role == 'premium' %>
   <h3>Downgrade Account</h3>
-  <p>Too rich for your blood? <%= button_to "Downgrade to standard", downgrade_user_registration_path, data: { confirm: "Are you sure?" }, method: :put %></p>
+  <p>Too rich for your blood? <%= button_to "Downgrade to standard", downgrade_user_registration_path, data: { confirm: "REMINDER: This will cause all of your private wikis to become public. Are you sure you want to downgrade to a standard account?" }, method: :put %></p>
 <% else %>
   <h3>You must be an admin, amirite?</h3>
   <p>Nnnnnnnice...</p>

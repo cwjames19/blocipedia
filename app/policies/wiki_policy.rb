@@ -1,15 +1,19 @@
 class WikiPolicy < ApplicationPolicy
 	
 	class Scope
-		attr_reader :scope, :user
+		attr_reader :user, :scope
 		
 		def initialize(user, scope)
-			@scope = scope
 			@user = user
+			@scope = scope
 		end
 		
 		def resolve
-			scope.all
+			if user.premium? || user.admin?
+				scope.all
+			else
+				scope.where(private: false)
+			end
 		end
 	end
 	
@@ -18,6 +22,7 @@ class WikiPolicy < ApplicationPolicy
 	end
 	
 	def show?
+		!wiki.private? || user.admin? || wiki.user == user
 	end
 	
 	def create?
@@ -28,7 +33,7 @@ class WikiPolicy < ApplicationPolicy
 	end
 	
 	def destroy?
-		user.admin?
+		user.admin? || (wiki.private? && wiki.user == user)
 	end
 	
 	def edit?

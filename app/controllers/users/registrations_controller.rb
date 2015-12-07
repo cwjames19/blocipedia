@@ -38,6 +38,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   
   def downgrade
     current_user.standard!
+    current_user.wikis.each do |wiki|
+      wiki.update_column(:private, false)
+    end
     flash[:notice] = "Hate to see you leave but love to watch you go ;)"
     redirect_to(request.referer || root_path)
   end

@@ -1,6 +1,9 @@
 <div>
 	<%= link_to "#{wiki.title}", wiki_path(wiki), method: :get %>
 	<div class='pull-right'>
+		<% if wiki.private %>
+			Private
+		<% end %>
 		<% if policy(wiki).edit? %>
 			<%= link_to "Edit Wiki", edit_wiki_path(wiki), method: :get, class: 'btn btn-success' %>
 		<% end %>
