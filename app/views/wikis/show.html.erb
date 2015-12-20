@@ -1,10 +1,19 @@
 <div>
 <h1><%= @wiki.title %></h1>
 	<div class='pull-right'>
-		<%= link_to "Edit Wiki", edit_wiki_path, method: :get %><br />
+		<%= link_to "Edit Wiki", edit_wiki_path, method: :get if policy(@wiki).edit? %><br />
 		<%= link_to "Delete Wiki", [@wiki], method: :delete if policy(@wiki).destroy? %>
 	</div>
 </div>
 <br />
 <%= markdown(@wiki.body) %>
 
+<% if @wiki.private? %>
+	<h3><%= "Collaborators" %></h3>
+	<% users = @wiki.users.order(username: :asc).to_a %>
+	<% users.delete_if{ |user| user == @wiki.user } %>
+	<%= "Username: #{@wiki.user.username}, Email: #{@wiki.user.email} (Creator)" %><br />
+	<% users.each do |collab| %>
+		<%= "Username: #{collab.username}, Email: #{collab.email}" %><br />
+	<% end %>
+<% end %>

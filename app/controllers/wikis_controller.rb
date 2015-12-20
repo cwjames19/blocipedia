@@ -9,12 +9,13 @@ class WikisController < ApplicationController
 	def create
 		@user = current_user
 		@wiki = @user.wikis.build(wiki_params)
+		@wiki.user = @user
 		
 		if @wiki.save
 			flash[:notice] = "Wiki saved!"
-			redirect_to root_path
+			redirect_to @wiki
 		else
-			flash[:error] = "An error occured while saving you article. Please try again."
+			flash[:error] = "An error occured while saving your article. Please try again."
 			redirect_to root_path
 		end
 	end
@@ -43,6 +44,8 @@ class WikisController < ApplicationController
 
 	def edit
 		@wiki = Wiki.find(params[:id])
+		@collaborator = Collaborator.new
+		@users = @wiki.users
 		authorize @wiki
 	end
 
@@ -59,7 +62,14 @@ class WikisController < ApplicationController
 		end
 	end
 	
-	private
+	rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+  
+  private
+  
+  def user_not_authorized
+    flash[:alert] = "You do not have permission to do that."
+    redirect_to root_path
+  end
 	
 	def authenticate_user
 		unless current_user

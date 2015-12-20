@@ -1,0 +1,9 @@
+<div class='form'>
+	<%= form_for collaborator, url: wiki_collaborators_path(wiki) do |f| %>
+		<div class='form-group'>
+			<%= f.label :user_email, "Add Collaborators" %>
+			<%= f.text_field :user_email, placeholder: "New collaborator email" %>
+		</div>
+		<%= f.submit "Add", class: 'btn btn-success' %>
+	<% end %>
+</div>

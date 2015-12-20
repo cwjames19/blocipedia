@@ -6,6 +6,23 @@
 	<li>Don't forget to add links to other pages.</li>
 </ul>
 <%= markdown("Markdown ~~nearly~~ **now** supported in wiki body!") %>
-<div class='col-md-8'>
+<div>
 	<%= render partial: "edit_form", locals: { wiki: @wiki } %>
 </div>
+<% if @wiki.private? %>
+	<div>
+		<h3>Manage Collaborators</h3>
+			<% users = @wiki.users.order(username: :asc).to_a %>
+			<% users.delete_if{ |user| user == @wiki.user } %>
+			<%= "Username: #{@wiki.user.username}, Email: #{@wiki.user.email} (Creator)" %><br />
+			<% users.each do |collab| %>
+				<%= "Username: #{collab.username}, Email: #{collab.email}" %><br />
+			<% end %>
+		<div><br />
+			<%= render partial: "/collaborators/add_form", locals: { wiki: @wiki, collaborator: @collaborator } %>
+		</div><br />
+		<div>
+			<%= render partial: "/collaborators/delete_form", locals: { wiki: @wiki, wiki_user_id: @wiki.user.id } %>
+		</div>
+	</div>
+<% end %>

@@ -20,6 +20,7 @@ users = User.all
 		user: User.all.sample
 		)
 end
+Wiki.create(user: User.find(9), title: "Private Wiki", body: "Are you on the list?", private: true)
 wikis = Wiki.all
 
 puts "Seed finished"

@@ -9,11 +9,23 @@ class WikiPolicy < ApplicationPolicy
 		end
 		
 		def resolve
-			if user.premium? || user.admin?
-				scope.all
+			wikis = []
+			if user
+				if user.role == 'admin'
+					wikis = scope.all
+				else
+					all_wikis = scope.all
+					wikis = []
+					all_wikis.each do |wiki|
+						if !wiki.private? || wiki.user == user || wiki.users.include?(user)
+							wikis << wiki
+						end
+					end
+				end
 			else
-				scope.where(private: false)
+				wikis = scope.where(private: false)
 			end
+			wikis
 		end
 	end
 	
@@ -22,7 +34,7 @@ class WikiPolicy < ApplicationPolicy
 	end
 	
 	def show?
-		!wiki.private? || user.admin? || wiki.user == user
+		!wiki.private? || ( user.present? && user.admin? || wiki.users.include?(user) )
 	end
 	
 	def create?
@@ -33,15 +45,15 @@ class WikiPolicy < ApplicationPolicy
 	end
 	
 	def destroy?
-		user.admin? || (wiki.private? && wiki.user == user)
+		user.present? && ( user.admin? || wiki.user == user )
 	end
 	
 	def edit?
-		user.present?
+		user.present? && show?
 	end
 	
 	def update?
-		user.present?
+		edit?
 	end
 	
 end
