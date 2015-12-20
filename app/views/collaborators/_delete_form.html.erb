@@ -1,0 +1,7 @@
+<%= form_tag wiki_collaborator_path(wiki), method: :delete do %>
+	<%= label_tag :id, "Select collaborator you want to drop" %>
+	<% collaborators = wiki.collaborators.all.to_a.delete_if{ |collab| collab.user_id == wiki_user_id } %>
+	<%= select_tag :id, options_from_collection_for_select(collaborators, :id, :user_email), prompt: "--Select user email--" %>
+	<%= hidden_field_tag :wiki_id, wiki.id %>
+	<%= submit_tag "Submit", class: 'btn btn-danger' %>
+<% end %>

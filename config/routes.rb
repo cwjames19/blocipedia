@@ -12,7 +12,10 @@ Rails.application.routes.draw do
 	devise_scope :user do
 		put 'users/downgrade' => 'users/registrations#downgrade', as: 'downgrade_user_registration'
 	end
-	resources :wikis
+	resources :wikis do
+		resources :collaborators, only: [:create]
+		delete 'collaborators/destroy' => 'collaborators#destroy', as: 'collaborator'
+	end
 	resources :charges, only: [:new, :create]
 	
 	root to: 'welcome#index'

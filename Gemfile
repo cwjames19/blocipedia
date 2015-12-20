@@ -20,6 +20,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'shoulda'
   gem 'factory_girl_rails', '~> 4.0'
+  gem 'shoulda-matchers'
 end
 
 # Use SCSS for stylesheets

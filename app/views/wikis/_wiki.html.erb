@@ -4,11 +4,11 @@
 		<% if wiki.private %>
 			Private
 		<% end %>
+		<% if wiki.user == current_user %>
+			<i class='glyphicon glyphicon-star'></i>
+			<% end %>
 		<% if policy(wiki).edit? %>
 			<%= link_to "Edit Wiki", edit_wiki_path(wiki), method: :get, class: 'btn btn-success' %>
-		<% end %>
-		<% if policy(wiki).destroy? %>
-			<%= link_to "Delete Wiki", [wiki], method: :delete, class: 'btn btn-danger' %>
 		<% end %>
 	</div>
 </div>
